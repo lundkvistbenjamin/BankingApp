@@ -1,5 +1,5 @@
 # bank_app.py
-from db import users  # Import the users dictionary from db.py
+from app.db import users  # Import the users dictionary from db.py
 
 class BankApp:
     users = users  # Load users from db.py

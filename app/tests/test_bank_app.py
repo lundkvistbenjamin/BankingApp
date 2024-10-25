@@ -10,7 +10,7 @@ mock_users_data = {
 
 @pytest.fixture
 def bank_app():
-    with patch.object(BankApp, 'load_users', return_value=mock_users_data):
+    with patch('app.db.users', mock_users_data):  # Mocking the users import from db.py
         return BankApp()
 
 def test_login_success(bank_app):
