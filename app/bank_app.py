@@ -1,4 +1,3 @@
-# bank_app.py
 from app.db import users  # Import the users dictionary from db.py
 
 class BankApp:
